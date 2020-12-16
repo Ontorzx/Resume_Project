@@ -1,0 +1,38 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block content %}
+    <div class= "mt-5 ">
+        <div class="text-center">
+        <img src="{% static 'core/images/ontor.jpg'%}" alt="profilepic"
+        class="img-thumbnail" width="200px" height="100px">
+        </div>
+
+        <div class="mt-5 text-white mx-5 text-justify ">
+        <h1 class="font-weight-bold st-font">Hallo,</h1>
+            <div class="px-4" style="line-height:2rem;">
+            <p style="text-indent:70px"> I am <b class="text-warning"> Khairul Islam Onter</b> and i am excited to learn new things,
+             i am well focused for my work and always try to explore new things.
+             I'm Graduated in CSE at Pabna University Of Science & Technology (PUST) and i am quite good 
+             in Web development,Web design,data science and networking and working on new technology is my passion.</p>
+             Seeking a challenging position in an organization where I can use my talents and skills
+             to grow and expand an organization as well as myself. To become a <b class="text-warning">Software engineer </b>where 
+             I have to use my skills and knowledge for the development of the project, where strong project
+            management and analytical skill will be useful in the delivery of the services to the customer</p>
+            
+            </p>
+            </div>
+        </div>
+
+    </div>         
+{% endblock content %}
+
+{% block footer %}
+
+            <div class="text-center mt-5">
+                <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+                <a href="{% url 'contact' %}" class="btn btn-outline-info my-3 ml-3">Contact</a>
+            </div>
+
+{% endblock footer %}
+
+    
